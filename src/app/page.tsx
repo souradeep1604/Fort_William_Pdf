@@ -7,7 +7,14 @@ export default function FeedbackForm() {
 	const [selectedMainTab, setSelectedMainTab] = useState<string | null>(null);
 
 	const handleMainTabClick = (tabId: string) => {
-		setSelectedMainTab(tabId);
+		const selectedTab = tabsConfig.find(tab => tab.id === tabId);
+		
+		// If tab has a direct URL, open it directly
+		if (selectedTab?.directUrl) {
+			window.open(selectedTab.directUrl, "_blank");
+		} else {
+			setSelectedMainTab(tabId);
+		}
 	};
 
 	const handleBackClick = () => {

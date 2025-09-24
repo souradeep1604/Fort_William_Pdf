@@ -8,6 +8,7 @@ export interface MainTab {
 	id: string;
 	name: string;
 	subTabs: SubTab[];
+	directUrl?: string; // Optional direct URL for tabs without sub-tabs
 }
 
 export const tabsConfig: MainTab[] = [
@@ -71,32 +72,7 @@ export const tabsConfig: MainTab[] = [
 	{
 		id: "banned-apps",
 		name: "Banned Apps",
-		subTabs: [
-			{
-				id: "banned-list",
-				name: "Banned Apps List",
-				url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1175px-Test-Logo.svg.png?20150906031702",
-			},
-			{
-				id: "banned-social",
-				name: "Social Media Apps",
-				url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1175px-Test-Logo.svg.png?20150906031702",
-			},
-			{
-				id: "banned-gaming",
-				name: "Gaming Apps",
-				url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1175px-Test-Logo.svg.png?20150906031702",
-			},
-			{
-				id: "banned-messaging",
-				name: "Messaging Apps",
-				url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1175px-Test-Logo.svg.png?20150906031702",
-			},
-			{
-				id: "banned-alternatives",
-				name: "Approved Alternatives",
-				url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1175px-Test-Logo.svg.png?20150906031702",
-			},
-		],
+		subTabs: [],
+		directUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1175px-Test-Logo.svg.png?20150906031702",
 	},
 ];
