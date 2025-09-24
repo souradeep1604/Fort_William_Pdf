@@ -25,7 +25,6 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Virtual Keyboard Kiosk Styles */
 @media (max-width: 768px) {
 	.virtual-keyboard-container {
 		position: fixed;
@@ -48,7 +47,6 @@ body {
 		-ms-user-select: none;
 	}
 
-	/* Prevent zoom on input focus for iOS */
 	@media screen and (-webkit-min-device-pixel-ratio: 0) {
 		input,
 		textarea {
@@ -57,9 +55,8 @@ body {
 	}
 }
 
-/* Ensure form elements are properly spaced */
 .form-container {
-	padding-bottom: 60vh; /* Extra padding for keyboard space */
+	padding-bottom: 60vh;
 }
 
 .form-container.keyboard-open {
@@ -72,10 +69,9 @@ body {
 	}
 }
 
-/* Kiosk-specific styles */
 @media (max-width: 768px) and (pointer: coarse) {
 	.kiosk-input {
-		min-height: 44px; /* Minimum touch target size */
+		min-height: 44px;
 		font-size: 16px;
 	}
 
@@ -90,18 +86,15 @@ body {
 	}
 }
 
-/* Prevent body scroll when keyboard is open */
 body.keyboard-open {
 	overflow: hidden;
 }
 
-/* Ensure suggestions are properly positioned */
 .suggestions-container {
 	position: relative;
 	z-index: 10;
 }
 
-/* Custom scrollbar for textareas */
 textarea {
 	scrollbar-width: thin;
 	scrollbar-color: #cbd5e1 #f1f5f9;
@@ -125,7 +118,6 @@ textarea::-webkit-scrollbar-thumb:hover {
 	background: #94a3b8;
 }
 
-/* Prevent double-tap zoom on iOS */
 @media (pointer: coarse) {
 	.no-double-tap {
 		touch-action: manipulation;

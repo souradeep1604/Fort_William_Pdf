@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Poorvi Yoddha Feedback",
+	title: "AG Branch Feedback",
 	description: "Share your valuable feedback to help us serve you better - Eastern Command",
 	icons: {
 		icon: "/favicon.svg",

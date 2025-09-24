@@ -8,7 +8,7 @@ export interface MainTab {
 	id: string;
 	name: string;
 	subTabs: SubTab[];
-	directUrl?: string; // Optional direct URL for tabs without sub-tabs
+	directUrl?: string;
 }
 
 export const tabsConfig: MainTab[] = [
