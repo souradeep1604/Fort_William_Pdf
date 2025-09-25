@@ -18,23 +18,23 @@ export const tabsConfig: MainTab[] = [
 		subTabs: [
 			{
 				id: "sop-general",
-				name: "General SOP",
-				url: "https://s24.q4cdn.com/216390268/files/doc_downloads/test.pdf",
+				name: "MULTI SPORTS COMPLEX (SOP)",
+				url: "/SOP_MULTI_SPORTS_COMPLEX.PDF",
 			},
 			{
 				id: "sop-security",
-				name: "Security SOP",
-				url: "https://s24.q4cdn.com/216390268/files/doc_downloads/test.pdf",
+				name: "ADDL ACG (SOP)",
+				url: "/SOP_ADDL_ACG.PDF",
 			},
 			{
 				id: "sop-operations",
-				name: "Operations SOP",
-				url: "https://s24.q4cdn.com/216390268/files/doc_downloads/test.pdf",
+				name: "ARMY SKILL TRG CENTER (SOP)",
+				url: "/SOP_ARMY_SKILL_TRG_CENTER.PDF",
 			},
 			{
 				id: "sop-emergency",
-				name: "Fire Fighting SOP",
-				url: "https://s24.q4cdn.com/216390268/files/doc_downloads/test.pdf",
+				name: "MACT RULING (SOP)",
+				url: "/MACT_SOP_RULING.PDF",
 			},
 		],
 	},
@@ -44,28 +44,23 @@ export const tabsConfig: MainTab[] = [
 		subTabs: [
 			{
 				id: "cyber-guidelines",
-				name: "Security Guidelines",
-				url: "https://s24.q4cdn.com/216390268/files/doc_downloads/test.pdf",
+				name: "LOSS IRREGULARITIES RULING",
+				url: "/LOSS_IRREGULARITIES_RULING.PDF",
 			},
 			{
 				id: "cyber-protocols",
-				name: "Security Protocols",
-				url: "https://s24.q4cdn.com/216390268/files/doc_downloads/test.pdf",
+				name: "REGIMENTAL FUND RULING",
+				url: "/REGIMENTAL_FUND_RULING.pdf",
 			},
 			{
 				id: "cyber-incident",
-				name: "Incident Response",
-				url: "https://s24.q4cdn.com/216390268/files/doc_downloads/test.pdf",
+				name: "AUDIT OBJECTION RULLING",
+				url: "/AUDIT_OBJECTION_RULLING.PDF",
 			},
 			{
 				id: "cyber-training",
-				name: "Training Materials",
-				url: "https://s24.q4cdn.com/216390268/files/doc_downloads/test.pdf",
-			},
-			{
-				id: "cyber-compliance",
-				name: "Compliance Requirements",
-				url: "https://s24.q4cdn.com/216390268/files/doc_downloads/test.pdf",
+				name: "REVISED RISK AND HARDSHIP ALLCE",
+				url: "/REVISED_RISK_AND_HARDSHIP_ALLCE.pdf",
 			},
 		],
 	},
@@ -73,6 +68,6 @@ export const tabsConfig: MainTab[] = [
 		id: "banned-apps",
 		name: "Banned Apps",
 		subTabs: [],
-		directUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1175px-Test-Logo.svg.png?20150906031702",
+		directUrl: "/321 BANNED APPS_053355_page-0001.jpg",
 	},
 ];

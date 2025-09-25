@@ -68,7 +68,7 @@ export default function FeedbackForm() {
 				{!selectedMainTab ? (
 					<div className="bg-white rounded-2xl shadow-xl overflow-hidden">
 						<div className="p-8">
-							<h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Select Category</h2>
+							<h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Category</h2>
 							<div className="space-y-6">
 								{tabsConfig.map((tab, index) => (
 									<button
@@ -119,9 +119,7 @@ export default function FeedbackForm() {
 													</h3>
 												</div>
 												<div className="mt-3 flex items-center space-x-2">
-													<div className="h-1 w-8 bg-blue-500/40 rounded-full"></div>
-													<div className="h-1 w-4 bg-blue-500/60 rounded-full"></div>
-													<div className="h-1 w-2 bg-blue-500/80 rounded-full"></div>
+													<div className="h-1 w-12 bg-blue-500/60 rounded-full"></div>
 												</div>
 											</div>
 											<div className="text-blue-600/60 group-hover:text-blue-600/80 group-hover:translate-x-2 transition-all duration-300">
@@ -197,11 +195,7 @@ export default function FeedbackForm() {
 												{subTab.name}
 											</h3>
 
-											<div className="flex items-center space-x-2 mt-4">
-												<div className="h-0.5 w-6 bg-blue-500/30 rounded-full"></div>
-												<div className="h-0.5 w-3 bg-blue-500/50 rounded-full"></div>
-												<div className="h-0.5 w-1.5 bg-blue-500/70 rounded-full"></div>
-											</div>
+											<div className="flex items-center space-x-2 mt-4"></div>
 										</div>
 
 										<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -215,12 +209,7 @@ export default function FeedbackForm() {
 			</div>
 
 			{/* Modal Component */}
-			<Modal
-				isOpen={modalOpen}
-				onClose={() => setModalOpen(false)}
-				url={modalUrl}
-				title={modalTitle}
-			/>
+			<Modal isOpen={modalOpen} onClose={() => setModalOpen(false)} url={modalUrl} title={modalTitle} />
 		</div>
 	);
 }
