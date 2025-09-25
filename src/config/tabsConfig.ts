@@ -19,22 +19,22 @@ export const tabsConfig: MainTab[] = [
 			{
 				id: "sop-general",
 				name: "MULTI SPORTS COMPLEX (SOP)",
-				url: "/SOP_MULTI_SPORTS_COMPLEX.PDF",
+				url: "/data/SOP_MULTI_SPORTS_COMPLEX.PDF",
 			},
 			{
 				id: "sop-security",
 				name: "ADDL ACG (SOP)",
-				url: "/SOP_ADDL_ACG.PDF",
+				url: "/data/SOP_ADDL_ACG.PDF",
 			},
 			{
 				id: "sop-operations",
 				name: "ARMY SKILL TRG CENTER (SOP)",
-				url: "/SOP_ARMY_SKILL_TRG_CENTER.PDF",
+				url: "/data/SOP_ARMY_SKILL_TRG_CENTER.PDF",
 			},
 			{
 				id: "sop-emergency",
 				name: "MACT RULING (SOP)",
-				url: "/MACT_SOP_RULING.PDF",
+				url: "/data/MACT_SOP_RULING.PDF",
 			},
 		],
 	},
@@ -45,22 +45,22 @@ export const tabsConfig: MainTab[] = [
 			{
 				id: "cyber-guidelines",
 				name: "LOSS IRREGULARITIES RULING",
-				url: "/LOSS_IRREGULARITIES_RULING.PDF",
+				url: "/data/LOSS_IRREGULARITIES_RULING.PDF",
 			},
 			{
 				id: "cyber-protocols",
 				name: "REGIMENTAL FUND RULING",
-				url: "/REGIMENTAL_FUND_RULING.pdf",
+				url: "/data/REGIMENTAL_FUND_RULING.pdf",
 			},
 			{
 				id: "cyber-incident",
 				name: "AUDIT OBJECTION RULLING",
-				url: "/AUDIT_OBJECTION_RULLING.PDF",
+				url: "/data/AUDIT_OBJECTION_RULLING.PDF",
 			},
 			{
 				id: "cyber-training",
 				name: "REVISED RISK AND HARDSHIP ALLCE",
-				url: "/REVISED_RISK_AND_HARDSHIP_ALLCE.pdf",
+				url: "/data/REVISED_RISK_AND_HARDSHIP_ALLCE.pdf",
 			},
 		],
 	},
@@ -68,6 +68,6 @@ export const tabsConfig: MainTab[] = [
 		id: "banned-apps",
 		name: "Banned Apps",
 		subTabs: [],
-		directUrl: "/321 BANNED APPS_053355_page-0001.jpg",
+		directUrl: "/data/321 BANNED APPS_053355_page-0001.jpg",
 	},
 ];
