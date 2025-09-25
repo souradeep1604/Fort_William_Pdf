@@ -2,15 +2,21 @@
 
 import React, { useState } from "react";
 import { tabsConfig } from "../config/tabsConfig";
+import Modal from "../components/Modal";
 
 export default function FeedbackForm() {
 	const [selectedMainTab, setSelectedMainTab] = useState<string | null>(null);
+	const [modalOpen, setModalOpen] = useState(false);
+	const [modalUrl, setModalUrl] = useState("");
+	const [modalTitle, setModalTitle] = useState("");
 
 	const handleMainTabClick = (tabId: string) => {
 		const selectedTab = tabsConfig.find((tab) => tab.id === tabId);
 
 		if (selectedTab?.directUrl) {
-			window.open(selectedTab.directUrl, "_blank");
+			setModalUrl(selectedTab.directUrl);
+			setModalTitle(selectedTab.name);
+			setModalOpen(true);
 		} else {
 			setSelectedMainTab(tabId);
 		}
@@ -20,8 +26,10 @@ export default function FeedbackForm() {
 		setSelectedMainTab(null);
 	};
 
-	const handleSubTabClick = (url: string) => {
-		window.open(url, "_blank");
+	const handleSubTabClick = (url: string, name: string) => {
+		setModalUrl(url);
+		setModalTitle(name);
+		setModalOpen(true);
 	};
 
 	return (
@@ -153,7 +161,7 @@ export default function FeedbackForm() {
 								?.subTabs.map((subTab, index) => (
 									<button
 										key={subTab.id}
-										onClick={() => handleSubTabClick(subTab.url)}
+										onClick={() => handleSubTabClick(subTab.url, subTab.name)}
 										className="relative overflow-hidden rounded-2xl p-6 cursor-pointer transform transition-all duration-500 hover:scale-105 hover:shadow-2xl group text-left bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300 hover:from-blue-200 hover:via-blue-300 hover:to-blue-400"
 									>
 										<div className="absolute inset-0 opacity-10">
@@ -205,6 +213,14 @@ export default function FeedbackForm() {
 					</div>
 				)}
 			</div>
+
+			{/* Modal Component */}
+			<Modal
+				isOpen={modalOpen}
+				onClose={() => setModalOpen(false)}
+				url={modalUrl}
+				title={modalTitle}
+			/>
 		</div>
 	);
 }

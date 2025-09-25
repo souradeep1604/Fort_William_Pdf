@@ -33,7 +33,7 @@ export const tabsConfig: MainTab[] = [
 			},
 			{
 				id: "sop-emergency",
-				name: "Emergency SOP",
+				name: "Fire Fighting SOP",
 				url: "https://s24.q4cdn.com/216390268/files/doc_downloads/test.pdf",
 			},
 		],
